@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/convertFragment"
+        android:title="@string/convert"
+        android:icon="@drawable/ic_calculator"/>
+
+    <item android:id="@+id/metalFragment"
+        android:title="@string/metal"
+        android:icon="@drawable/ic_metal"/>
+
+    <item android:id="@+id/ratesFragment"
+        android:title=""
+        />
+
+    <item android:id="@+id/serviceFragment"
+        android:title="@string/service"
+        android:icon="@drawable/ic_service"/>
+
+    <item android:id="@+id/accountFragment"
+        android:title="@string/account"
+        android:icon="@drawable/ic_account"/>
+
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ratesFragment">
+
+    <fragment
+        android:id="@+id/ratesFragment"
+        android:name="com.example.treasurysolutions.presentation.home.ratesfragment.RatesFragment"
+        android:label="fragment_rates"
+        tools:layout="@layout/fragment_rates" >
+        <action
+            android:id="@+id/action_ratesFragment_to_bankRatesFragment"
+            app:destination="@id/bankRatesFragment" />
+        <action
+            android:id="@+id/action_ratesFragment_to_currenciesRatesFragment"
+            app:destination="@id/currenciesRatesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/convertFragment"
+        android:name="com.example.treasurysolutions.presentation.home.convertfragment.ConvertFragment"
+        android:label="fragment_convert"
+        tools:layout="@layout/fragment_convert" />
+
+    <fragment
+        android:id="@+id/metalFragment"
+        android:name="com.example.treasurysolutions.presentation.home.metalfragment.MetalFragment"
+        android:label="fragment_metal"
+        tools:layout="@layout/fragment_metal" />
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.example.treasurysolutions.presentation.home.servicefragment.ServiceFragment"
+        android:label="fragment_service"
+        tools:layout="@layout/fragment_service" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.treasurysolutions.presentation.home.accountfragment.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+
+    <action
+        android:id="@+id/action_to_convertFragment"
+        app:destination="@id/convertFragment"
+        app:popUpTo="@+id/convertFragment"
+        app:popUpToInclusive="true"/>
+    <action
+        android:id="@+id/action_to_metalFragment"
+        app:destination="@id/metalFragment"
+        app:popUpTo="@+id/metalFragment"
+        app:popUpToInclusive="true"/>
+    <action
+        android:id="@+id/action_to_ratesFragment"
+        app:destination="@id/ratesFragment"
+        app:popUpTo="@+id/ratesFragment"
+        app:popUpToInclusive="true"/>
+    <action
+        android:id="@+id/action_to_serviceFragment"
+        app:destination="@id/serviceFragment"
+        app:popUpTo="@+id/serviceFragment"
+        app:popUpToInclusive="true"/>
+    <action
+        android:id="@+id/action_to_accountFragment"
+        app:destination="@id/accountFragment"
+        app:popUpTo="@+id/accountFragment"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/bankRatesFragment"
+        android:name="com.example.treasurysolutions.presentation.home.bankratesfragment.BankRatesFragment"
+        android:label="BankRatesFragment" />
+    <fragment
+        android:id="@+id/currenciesRatesFragment"
+        android:name="com.example.treasurysolutions.presentation.home.currenciesratesfragment.CurrenciesRatesFragment"
+        android:label="CurrenciesRatesFragment" />
+</navigation>
